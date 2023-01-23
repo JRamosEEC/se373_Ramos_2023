@@ -1,16 +1,22 @@
 {
   "name": "se_373_2023",
   "version": "1.0.0",
-  "description": "Day 1 ",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "start": "netlify-lambda serve src",
+    "build": "netlify-lambda build src"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
     "hbs": "^4.2.0",
-    "nodemon": "^2.0.20"
+    "netlify-lambda": "^2.0.15",
+    "nodemon": "^2.0.20",
+    "serverless-http": "^3.1.1"
+  },
+  "devDependencies": {
+    "netlify-cli": "^12.9.1"
   }
 }
